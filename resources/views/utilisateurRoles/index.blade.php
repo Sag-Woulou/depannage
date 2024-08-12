@@ -28,8 +28,8 @@
             <tr>
                 <td>{{ $utilisateurRole->utilisateur->nom }}</td>
                 <td>{{ $utilisateurRole->role->nom_role }}</td>
-                <td>{{ $utilisateurRole->zone->nom_zone }}</td>
-                <td>{{ $utilisateurRole->droitAccess->name ?? 'Aucun' }}</td>
+                <td>{{ $utilisateurRole->zone->name }}</td>
+                <td>{{ $utilisateurRole->droitAccess->nom_droit_access ?? 'Aucun' }}</td>
                 <td>
                     <a href="{{ route('utilisateurRoles.edit', $utilisateurRole->id) }}" class="btn btn-warning btn-sm">Modifier</a>
                 </td>
@@ -45,3 +45,4 @@
         </tbody>
     </table>
 @endsection
+
