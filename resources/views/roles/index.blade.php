@@ -38,7 +38,7 @@
                     @endforelse
                 </td>
                 <td>
-                    <button href="{{ route('roles.edit', $role->id) }}" class="btn btn-warning">Modifier</button>
+                    <a href="{{ route('roles.edit', $role->id) }}" class="btn btn-warning">Modifier</a>
                 </td>
                 <td>
                     <form action="{{ route('roles.destroy', $role->id) }}" method="POST" onsubmit="return confirm('Voulez-vous vraiment supprimer ce rôle ?');">

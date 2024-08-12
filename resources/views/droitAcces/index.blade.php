@@ -32,7 +32,7 @@
                         <td>{{ $droitAcces->nom_droit_access }}</td>
                         <td>{{ $droitAcces->niveau_droit_access }}</td>
                         <td>
-                            <button href="{{ route('droitAcces.edit', $droitAcces->id) }}" class="btn btn-warning btn-sm">Modifier</button>
+                            <a href="{{ route('droitAcces.edit', $droitAcces->id) }}" class="btn btn-warning btn-sm">Modifier</a>
                         </td>
                         <td>
                             <form action="{{ route('droitAcces.destroy', $droitAcces->id) }}" method="POST" onsubmit="return confirm('Voulez-vous vraiment supprimer ce droit d\'accès ?');" style="display:inline;">

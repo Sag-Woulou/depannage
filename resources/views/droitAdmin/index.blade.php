@@ -30,7 +30,7 @@
                     <td>{{ $droitAdmin->nom_droit_admin }}</td>
                     <td>{{ $droitAdmin->niveau_droit_admin }}</td>
                     <td>
-                        <button href="{{ route('droitAdmin.edit', $droitAdmin->id) }}"class="btn btn-warning">Modifier</button>
+                        <a href="{{ route('droitAdmin.edit', $droitAdmin->id) }}"class="btn btn-warning">Modifier</a>
                     </td>
                     <td>
                         <form action="{{ route('droitAdmin.destroy', $droitAdmin->id) }}" method="POST" onsubmit="return confirm('Voulez-vous vraiment supprimer?');">
